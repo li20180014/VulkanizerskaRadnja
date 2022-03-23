@@ -12,17 +12,14 @@ public class VulkanizerskaRadnjaTest extends RadnjaTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		super.setUp();
 		radnja = new VulkanizerskaRadnja();
-		guma = new AutoGuma();
-		guma.setMarkaModel("Michelin");
-		guma.setPrecnik(17);
-		guma.setSirina(205);
-		guma.setVisina(55);
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
 		radnja = null;
+		guma=null;
 	}
 
 }
